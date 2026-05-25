@@ -1,0 +1,10 @@
+{
+  "name": "Remix: Stool \u0026 Appliance Diary",
+  "description": "排便（量・硬さ）の記録とストーマ装具の在庫管理を行う、Android用のKotlin/Jetpack Composeコードジェネレータ＆ウェブシミュレータアプリ。",
+  "requestFramePermissions": [
+    "vibrate"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

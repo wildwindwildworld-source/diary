@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.stoolappliancediary">
+
+    <!-- 基本権限: 端末のバイブレーションを動作させる許可 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    
+    <!-- Android 13 (API 33) 以上の高プライオリティのプッシュ通知表示に必須の権限 -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@android:mipmap/sym_def_app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@android:mipmap/sym_def_app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StoolApplianceDiary">
+        
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.StoolApplianceDiary">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Glance Widget AppWidgetProvider Registry -->
+        <receiver
+            android:name=".widget.StoolGlanceWidgetReceiver"
+            android:exported="true"
+            android:label="排便・ストーマ装具クイック入力">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/stool_widget_info" />
+        </receiver>
+
+    </application>
+</manifest>

@@ -1,0 +1,18 @@
+{
+  "short_name": "StoolDiary",
+  "name": "Stool & Appliance Stock Diary",
+  "description": "排泄状況の管理とストーマ装具の在庫管理を行う日記アプリ",
+  "icons": [
+    {
+      "src": "/app_icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512 any",
+      "purpose": "any"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "display": "standalone",
+  "orientation": "portrait"
+}

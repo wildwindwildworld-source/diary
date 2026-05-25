@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.github.com/tools">
+    <style name="Theme.StoolApplianceDiary" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- App theme customizations can go here if needed -->
+    </style>
+</resources>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- グラデーション定義 -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="heartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- 背景：角丸スレート -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- 抽象的なリング・サークル (ストーマ装具/保護を表現) -->
+  <circle cx="256" cy="256" r="140" fill="none" stroke="url(#goldGrad)" stroke-width="12" opacity="0.15" />
+  
+  <g filter="url(#shadow)">
+    <!-- カレンダー・記録手帳のベース -->
+    <rect x="136" y="146" width="240" height="240" rx="32" fill="#334155" />
+    <rect x="136" y="146" width="240" height="60" rx="32" fill="#1e293b" />
+    <!-- カレンダーの切り欠き（上に丸いリングを模したバインダー） -->
+    <circle cx="196" cy="146" r="14" fill="#0f172a" />
+    <circle cx="316" cy="146" r="14" fill="#0f172a" />
+    <rect x="190" y="120" width="12" height="40" rx="6" fill="#94a3b8" />
+    <rect x="310" y="120" width="12" height="40" rx="6" fill="#94a3b8" />
+
+    <!-- 手帳内のカレンダーグリッドを模したドット/ライン -->
+    <rect x="176" y="240" width="40" height="12" rx="4" fill="#475569" />
+    <rect x="236" y="240" width="40" height="12" rx="4" fill="#475569" />
+    <rect x="296" y="240" width="40" height="12" rx="4" fill="#475569" />
+    
+    <rect x="176" y="270" width="40" height="12" rx="4" fill="#475569" />
+    <rect x="236" y="270" width="40" height="12" rx="4" fill="#475569" />
+    <rect x="296" y="270" width="40" height="12" rx="4" fill="url(#goldGrad)" />
+
+    <!-- 排泄の健康としなやかな毎日を象徴する、水滴＆ハート型のクリーンマーク -->
+    <path d="M296,216 C236,216 236,296 296,356 C356,296 356,216 296,216 Z" fill="url(#heartGrad)" />
+    
+    <!-- チェックマーク、健康の達成 -->
+    <path d="M276,286 L291,301 L321,271" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- 装飾用のきらめき / 健康・安心 -->
+  <path d="M120,380 L126,396 L142,400 L126,404 L120,420 L114,404 L98,400 L114,396 Z" fill="#34d399" opacity="0.8" />
+  <path d="M410,100 L414,112 L426,115 L414,118 L410,130 L406,118 L394,115 L406,112 Z" fill="#fbbf24" opacity="0.8" />
+</svg>
